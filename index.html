@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Template</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://www.unpkg.com/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    //this rootElement is used to gain the access for the div tag with the id root.
+    let rootElement = document.getElementById("#root");
+    //it is generally use to create the element.
+   let header= React.createElement("p",null,"Seize the day");
+   //it is use to render the new created element into the main container.
+   ReactDOM.createRoot(rootElement).render(header);
+   
+   //differences between the  between manipulating the DOM using traditional JavaScript and React's approach. 
+   /* 1- the react approach is much faster than the traditional javascript approach.
+    2- the react approach is more readable than the traditional DOM approach.
+*/    
+  </script>
+</html> 
